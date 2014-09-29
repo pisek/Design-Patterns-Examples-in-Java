@@ -41,4 +41,13 @@ A large monolithic design does not scale well as new graphing or monitoring requ
 Solution:
 _Observer_ pattern provides an easy way to create and add some additional part of code which should be executed on some event. All kind of _Listeners_ are an example of _Observer_.
 
+## Null Object ##
+
+Problem:
+Sometimes a class that requires a collaborator does not need the collaborator to do anything. However, the class wishes to treat a collaborator that does nothing the same way it treats one that actually provides behavior.
+
+Solution:
+When we have an object of _Application_ which uses anoher object which implements eg. _PrintStream_, we can create a "mock" Null Object implementing this _PrintStream_ and just "DO NOTHING".
+
+
 
