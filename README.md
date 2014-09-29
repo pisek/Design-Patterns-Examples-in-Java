@@ -24,3 +24,11 @@ We would like to hide the implementation from outside.
 
 Solution:
 Create an base interface _Strategy_ and implement it in many different ways as you wish.
+
+## Observer ##
+
+Problem:
+A large monolithic design does not scale well as new graphing or monitoring requirements are levied.
+
+Solution:
+_Observer_ pattern provides an easy way to create and add some additional part of code which should be executed on some event. All kind of _Listeners_ are an example of _Observer_.
