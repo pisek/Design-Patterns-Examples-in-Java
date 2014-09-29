@@ -49,5 +49,10 @@ Sometimes a class that requires a collaborator does not need the collaborator to
 Solution:
 When we have an object of _Application_ which uses anoher object which implements eg. _PrintStream_, we can create a "mock" Null Object implementing this _PrintStream_ and just "DO NOTHING".
 
+## Memento ##
 
+Problem:
+Need to restore an object back to its previous state (e.g. "undo" or "rollback" operations).
 
+Solution:
+We need a _Memento_ object which saves states. Additionally, we need a _MementoHolder_ which will hold all versions of the object.
