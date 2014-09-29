@@ -15,3 +15,12 @@ Components have similarities but there is no common code, hence when change is d
 
 Solution:
 Template Method which allows to reuse common code.
+
+## Strategy ##
+
+Problem:
+One of the dominant strategies of object-oriented design is the "open-closed principle". (Open for extension, closed for modification)
+We would like to hide the implementation from outside.
+
+Solution:
+Create an base interface _Strategy_ and implement it in many different ways as you wish.
