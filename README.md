@@ -25,6 +25,14 @@ We would like to hide the implementation from outside.
 Solution:
 Create an base interface _Strategy_ and implement it in many different ways as you wish.
 
+## State ##
+
+Problem:
+A monolithic object's behavior is a function of its state, and it must change its behavior at run-time depending on that state. Or, an application is characterixed by large and numerous case statements that vector flow of control based on the state of the application.
+
+Solution:
+It usually is a field which shows some kind of state and executes a different part of code depending on this state.
+
 ## Observer ##
 
 Problem:
@@ -32,3 +40,5 @@ A large monolithic design does not scale well as new graphing or monitoring requ
 
 Solution:
 _Observer_ pattern provides an easy way to create and add some additional part of code which should be executed on some event. All kind of _Listeners_ are an example of _Observer_.
+
+
